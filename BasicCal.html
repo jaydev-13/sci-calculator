@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="number" id="1stnum" placeholder="Enter the First Number">
+<input type="number" id="2ndnum" placeholder="Enetr the Second Number">
+<button onclick="add()">Addition</button>
+<button onclick="sub()">Subtraction</button>
+<button onclick="multi()">Multiplication</button>
+<button onclick="div()">Divison</button>
+<button onclick="sqrt()">SquareRoot</button>
+<button onclick="double()">Double</button>
+<button onclick="exp()">Exponent</button>
+<button onclick="sin()">Sin</button>
+<button onclick="cos()">Cos</button>
+<button onclick="tan()">Tan</button>
+<button onclick="asin()">ArcSin</button>
+<button onclick="acos()">ArcCos</button>
+<button onclick="atan()">ArcTan</button>
+<button onclick="sinh()">SinHyperbolic</button>
+<button onclick="cosh()">CosHyperbolic</button>
+<button onclick="tanh()">TanHyperbolic</button>
+<button onclick="abs()">AbsoluteValue</button>
+<button onclick="cbrt()">CubeRoot</button>
+<button onclick="ln()">NaturalLog</button>
+<button onclick="log()">Logorith</button>
+<button onclick="En()">EulerNo</button>
+<button onclick="pi()">pi</button>
+<button onclick ="Fact()">Factorial</button>
+
+<p id="Res">Result</p>
+<p id="Res1"></p>
+    <script>
+        
+     function add(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=a + b;
+      document.getElementById("Res").innerHTML = c; 
+     }
+
+     function sub(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=a - b;
+      document.getElementById("Res").innerHTML = c; 
+     }
+
+     function multi(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=a * b;
+      document.getElementById("Res").innerHTML = c; 
+     }
+
+     function div(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=a / b;
+      document.getElementById("Res").innerHTML = c; 
+     }
+
+     function sqrt(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.sqrt(a);
+      d=Math.sqrt(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function double(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c = 2 * a;
+      d = 2 * b;
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+
+     function exp(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.pow(a,b);
+      document.getElementById("Res").innerHTML = c; 
+     }
+
+     function sin(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.sin(a);
+      d=Math.sin(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function cos(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.cos(a);
+      d=Math.cos(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function tan(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.tan(a);
+      d=Math.tan(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function asin(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.asin(a);
+      d=Math.asin(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function acos(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.acos(a);
+      d=Math.acos(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function atan(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.atan(a);
+      d=Math.atan(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function sinh(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.sinh(a);
+      d=Math.sinh(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function cosh(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.cosh(a);
+      d=Math.cosh(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function tanh(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.tanh(a);
+      d=Math.tanh(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function abs(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.abs(a);
+      d=Math.abs(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function cbrt(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.cbrt(a);
+      d=Math.cbrt(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function ln(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.log(a);
+      d=Math.log(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     
+     function log(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      c=Math.log10(a);
+      d=Math.log10(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function En(){
+       
+      c=Math.E;
+      d=Math.E;
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function pi(){
+        
+        
+      c=Math.PI;
+      d=Math.PI;
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+     function Fact(){
+        var a=document.getElementById("1stnum").value;
+        var b=document.getElementById("2ndnum").value;
+        a=Number(a)
+        b=Number(b)
+      // let fact1=1;
+     //  let fact2=2;
+      // let i;
+        function fact(n){
+       
+        let fact1=1;
+        let i;
+        for (i=1 ; i<=n ;i++){
+        fact1 *=i;
+        
+       }
+       return fact1;
+      }
+      
+      c=fact(a);
+      d=fact(b);
+
+      document.getElementById("Res").innerHTML = c; 
+      document.getElementById("Res1").innerHTML = d; 
+     }
+
+
+     
+    
+
+     //code is not complete eroor in pi and euler no
+    </script>
+</body>
+</html>
